@@ -1,8 +1,7 @@
-# Multisync-Docker-Full-Guide
+# Docker-Only Guide for synchronizer-cli
 
+```bash Install synchronizer-cli```
 
-Docker-Only Guide for synchronizer-cli
-1. Install synchronizer-cli
 Open your terminal and run:
 
 bash
