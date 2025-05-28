@@ -40,7 +40,7 @@ After configuration, run the Docker container:
 ✅ This automatically pulls the latest image and starts the container.
 
 ---
-## 🔄 Run in the Background
+## 🔄 Run in the Background (OPTIONAL)
 To run the synchronizer in the background (detached mode), use:
 
     nohup synchronize start > sync.log 2>&1 &
