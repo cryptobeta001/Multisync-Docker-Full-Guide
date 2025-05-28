@@ -1,10 +1,12 @@
 # Docker-Only Guide for synchronizer-cli
 
-```bash Install synchronizer-cli```
+```
+bash 
+Install synchronizer-cli```
 
 Open your terminal and run:
 
-bash
+```bash
 npm install -g synchronizer-cli
 2. Initialize Configuration
 Set up your synchronizer configuration interactively:
@@ -99,9 +101,12 @@ NPX/Node.js Issues:
 
 bash
 synchronize service-web
+bash
 node --version
+bash
 npm --version
 
+---
 Platform Support Matrix (Docker Focus)
 Platform	Docker Install	Permission Fix	Architecture
 Ubuntu/Debian	✅ Auto	✅ Auto	AMD64/ARM64
@@ -110,4 +115,5 @@ Fedora	✅ Auto	✅ Auto	AMD64/ARM64
 macOS	📖 Manual	N/A	AMD64/ARM64
 Windows	📖 Manual	N/A	AMD64
 This guide should help you get started with synchronizer-cli using Docker without involving systemctl.
+---
 
