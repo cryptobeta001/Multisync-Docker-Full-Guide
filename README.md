@@ -79,6 +79,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
 🧾 Example Config (~/.synchronizer-cli/config.json)
 
 ```
+bash
 {
   "userName": "optional-sync-name",
   "key": "your-synq-key",
