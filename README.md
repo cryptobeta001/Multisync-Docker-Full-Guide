@@ -26,6 +26,18 @@ After configuration, run the Docker container:
 
     synchronize start
 
+---
+## 🔄 Run in the Background
+To run the synchronizer in the background (detached mode), use:
+
+    nohup synchronize start > sync.log 2>&1 &
+
+This will:
+Start the synchronizer in the background
+Redirect logs to sync.log
+Keep it running even after you close the terminal
+
+---
 ## ✅ This automatically pulls the latest image and starts the container.
 
 ---
@@ -49,6 +61,7 @@ If you see permission errors:
 Log out and back in afterward for changes to take effect.
 
 ---
+
 ## 🧪 Platform Compatibility Test
 
 Check if your system is compatible with Synchronizer's Docker architecture:
@@ -56,6 +69,11 @@ Check if your system is compatible with Synchronizer's Docker architecture:
     synchronize test-platform
 
 ---
+## ⚙️ UFW unlock
+
+ 
+
+
 ## 📊 Optional: Launch Web Dashboard
 
 This starts a temporary dashboard for real-time performance and monitoring.
@@ -66,6 +84,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
 - Metrics API Port: 3001
 
 ---
+
 ## 🧾 Example Config (~/.synchronizer-cli/config.json)
 
 ```Json
@@ -81,6 +100,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
 }
 ```
 ---
+## 🧰 Useful Commands
 
 | Command                      | Description                                                               |
 | ---------------------------- | ------------------------------------------------------------------------- |
