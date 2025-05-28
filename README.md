@@ -78,6 +78,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
 ──────────────────────────────────────────────
 🧾 Example Config (~/.synchronizer-cli/config.json)
 
+```
 {
   "userName": "optional-sync-name",
   "key": "your-synq-key",
@@ -88,6 +89,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
   "depin": "wss://api.multisynq.io/depin",
   "launcher": "cli"
 }
+```
 
 ──────────────────────────────────────────────
 📎 Notes
