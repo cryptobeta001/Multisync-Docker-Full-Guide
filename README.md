@@ -71,8 +71,15 @@ Log out and back in afterward for changes to take effect.
 ## 📦 To check logs
 
     journalctl -u synchronizer-cli -f 
+
+## 📊 Synchronize web
+
+![image](https://github.com/user-attachments/assets/565a3da0-65bb-4f9b-a21e-888d212f2eef)
+
     
 ---
+
+
 ## 🧰 Useful Commands
 
 | Command                      | Description                                                               |
