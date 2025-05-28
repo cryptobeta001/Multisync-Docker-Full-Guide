@@ -30,26 +30,6 @@ This will create a config file at ~/.synchronizer-cli/config.json.
 
 Follow the prompts to enter your Synq key, wallet address, and sync name.
 
-
-2. Start the Synchronizer (Docker)
-
-After configuration, run the Docker container:
-
-    synchronize start
-
-✅ This automatically pulls the latest image and starts the container.
-
----
-## 🔄 Run in the Background (OPTIONAL)
-To run the synchronizer in the background (detached mode), use:
-
-    nohup synchronize start > sync.log 2>&1 &
-
-This will:
-Start the synchronizer in the background
-Redirect logs to sync.log
-Keep it running even after you close the terminal
-
 ---
 ## 🐳 Docker Management
 
@@ -72,39 +52,26 @@ Log out and back in afterward for changes to take effect.
 
 ---
 
-## 🧪 Platform Compatibility Test
+## 📊 Setup-Service file
 
-Check if your system is compatible with Synchronizer's Docker architecture:
+    synchronize service
+    sudo cp ~/.synchronizer-cli/synchronizer-cli.service /etc/systemd/system/
+    sudo systemctl daemon-reload
+    sudo systemctl enable synchronizer-cli
+    sudo systemctl start synchronizer-cli
 
-    synchronize test-platform
+## Web Dashboard
 
----
+    synchronize service-web
+    sudo cp ~/.synchronizer-cli/synchronizer-cli-web.service /etc/systemd/system/
+    sudo systemctl daemon-reload
+    sudo systemctl enable synchronizer-cli-web
+    sudo systemctl start synchronizer-cli-web
 
-## 📊 Optional: Launch Web Dashboard
+## To check logs
 
-This starts a temporary dashboard for real-time performance and monitoring.
-
-    synchronize web
-
-- Dashboard Port: 3000
-- Metrics API Port: 3001
-
----
-
-## 🧾 Example Config (~/.synchronizer-cli/config.json)
-
-```Json
-{
-  "userName": "optional-sync-name",
-  "key": "your-synq-key",
-  "wallet": "your-wallet-address",
-  "secret": "generated-secret",
-  "hostname": "your-hostname",
-  "syncHash": "generated-sync-hash",
-  "depin": "wss://api.multisynq.io/depin",
-  "launcher": "cli"
-}
-```
+    journalctl -u synchronizer-cli -f 
+    
 ---
 ## 🧰 Useful Commands
 
