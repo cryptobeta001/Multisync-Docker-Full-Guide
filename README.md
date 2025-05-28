@@ -62,7 +62,7 @@ Log out and back in afterward for changes to take effect.
 
 ---
     sudo systemctl stop synchronizer-cli
-(Info: wanted to update something)
+(Info: wanted to update something do this first)
 
 ---
     
@@ -77,7 +77,7 @@ Log out and back in afterward for changes to take effect.
 
 ---
     sudo systemctl stop synchronizer-cli-web
-(Info: wanted to update your dashboard)
+(Info: wanted to update your dashboard do this first)
 
 ---
 
