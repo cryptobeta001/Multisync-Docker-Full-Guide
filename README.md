@@ -91,7 +91,8 @@ This starts a temporary dashboard for real-time performance and monitoring.
 }
 ```
 
-──📎 NOTES
+──────────────────────────────────────────────
+📎 NOTES
 
 - No systemctl or background service setup required in this guide.
 - Docker container will run in the foreground unless you run it in the background or with a process manager like tmux, screen, or docker run -d.
