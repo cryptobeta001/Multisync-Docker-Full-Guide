@@ -8,7 +8,6 @@ A minimal guide to set up and run `synchronizer-cli` using Docker. No system ser
 UFW unlock
 
     Sudo ufw allow 3000/tcp
-    
     Sudo ufw allow 3001/tcp
 
 Check the new rule:
