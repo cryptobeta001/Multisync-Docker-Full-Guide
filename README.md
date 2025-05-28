@@ -72,8 +72,6 @@ Log out and back in afterward for changes to take effect.
 
     journalctl -u synchronizer-cli -f 
 
-![image](https://github.com/user-attachments/assets/6a5078a5-4888-4e71-b68c-2eedd7ce6a63)
-
 
 ## 📊 Monitor
 
