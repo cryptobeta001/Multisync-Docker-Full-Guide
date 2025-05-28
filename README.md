@@ -126,8 +126,3 @@ This starts a temporary dashboard for real-time performance and monitoring.
 """
 
 ---
-
-# Save the guide to a text file
-file_path = Path("synchronizer_docker_guide.txt")
-file_path.write_text(docker_guide_text)
-print(f"Guide saved to {file_path.resolve()}")
