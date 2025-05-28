@@ -26,8 +26,10 @@ Install the CLI globally:
 This will create a config file at ~/.synchronizer-cli/config.json.
 
     synchronize init
+    
 
 Follow the prompts to enter your Synq key, wallet address, and sync name.
+
 
 2. Start the Synchronizer (Docker)
 
