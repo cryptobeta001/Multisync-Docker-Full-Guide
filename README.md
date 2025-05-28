@@ -60,6 +60,12 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl enable synchronizer-cli
     sudo systemctl start synchronizer-cli
 
+---
+    sudo systemctl stop synchronizer-cli
+(Info: wanted to update something)
+---
+    
+
 ## 🌐 Web Dashboard
 
     synchronize service-web
@@ -67,6 +73,12 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl daemon-reload
     sudo systemctl enable synchronizer-cli-web
     sudo systemctl start synchronizer-cli-web
+
+---
+    sudo systemctl stop synchronizer-cli-web
+(Info: wanted to update your dashboard)
+---
+
 
 ## 📦 To check logs
 
