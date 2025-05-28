@@ -69,14 +69,14 @@ This starts a temporary dashboard for real-time performance and monitoring.
 ──────────────────────────────────────────────
 🧰 Useful Commands
 
-    synchronize start             Start synchronizer Docker container
+    synchronize start            Start synchronizer Docker container
     synchronize install-docker   Auto-install Docker on Linux
     synchronize fix-docker       Fix Docker permission issues
     synchronize web              Launch monitoring dashboard
     synchronize status           View status and logs
 
 ──────────────────────────────────────────────
-🧾 Example Config (~/.synchronizer-cli/config.json)
+🧾 Example Config (cmd: nano config.json) (path: ~/.synchronizer-cli/config.json)
 
 ```
 {
@@ -91,8 +91,7 @@ This starts a temporary dashboard for real-time performance and monitoring.
 }
 ```
 
-──────────────────────────────────────────────
-📎 Notes
+──📎 NOTES
 
 - No systemctl or background service setup required in this guide.
 - Docker container will run in the foreground unless you run it in the background or with a process manager like tmux, screen, or docker run -d.
