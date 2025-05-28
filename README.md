@@ -81,13 +81,15 @@ This starts a temporary dashboard for real-time performance and monitoring.
 }
 ```
 ---
-## 🧰 Useful Commands
 
-    synchronize start            Start synchronizer Docker container
-    synchronize install-docker   Auto-install Docker on Linux
-    synchronize fix-docker       Fix Docker permission issues
-    synchronize web              Launch monitoring dashboard
-    synchronize status           View status and logs
+| Command                      | Description                                                               |
+| ---------------------------- | ------------------------------------------------------------------------- |
+| `synchronize start`          | Launch the Docker container. Auto-detects platform & checks Docker setup. |
+| `synchronize status`         | Display current service state, logs, and helpful next steps.              |
+| `synchronize web`            | Launch the web dashboard for live monitoring.                             |
+| `synchronize install-docker` | Install Docker automatically (Linux only). Supports major distros.        |
+| `synchronize fix-docker`     | Fix Docker group permissions & user access.                               |
+| `synchronize test-platform`  | Validate Docker compatibility with your system architecture.              |
     
 ---
 
