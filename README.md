@@ -22,7 +22,7 @@ Set up your configuration interactively:
 synchronize init
 ```
 
-### 📁 Example `config.json`
+### 📁 Example `config.json` (nano config.json)
 
 ```json
 {
@@ -46,6 +46,16 @@ Run the synchronizer Docker container:
 ```bash
 synchronize start
 ```
+
+##🔄 Run in the Background
+
+```bash
+nohup synchronize start > sync.log 2>&1 &
+```
+This will:
+Start the synchronizer in the background
+Redirect logs to sync.log
+Keep it running even after you close the terminal
 
 ---
 
