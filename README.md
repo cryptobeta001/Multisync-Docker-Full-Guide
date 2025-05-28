@@ -5,6 +5,15 @@ A minimal guide to set up and run `synchronizer-cli` using Docker. No system ser
 ---
 ## 🛠️ Installation
 
+UFW unlock
+
+    Sudo ufw allow 3000/tcp
+    Sudo ufw allow 3001/tcp
+
+Check the new rule:
+
+    Sudo ufw status
+
 Install the CLI globally:
 
     npm install -g synchronizer-cli
@@ -26,6 +35,8 @@ After configuration, run the Docker container:
 
     synchronize start
 
+✅ This automatically pulls the latest image and starts the container.
+
 ---
 ## 🔄 Run in the Background
 To run the synchronizer in the background (detached mode), use:
@@ -36,9 +47,6 @@ This will:
 Start the synchronizer in the background
 Redirect logs to sync.log
 Keep it running even after you close the terminal
-
----
-## ✅ This automatically pulls the latest image and starts the container.
 
 ---
 ## 🐳 Docker Management
@@ -69,10 +77,6 @@ Check if your system is compatible with Synchronizer's Docker architecture:
     synchronize test-platform
 
 ---
-## ⚙️ UFW unlock
-
- 
-
 
 ## 📊 Optional: Launch Web Dashboard
 
