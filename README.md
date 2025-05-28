@@ -84,8 +84,17 @@ Log out and back in afterward for changes to take effect.
 
 ## 📦 To check logs
 
-    journalctl -u synchronizer-cli -f 
+```bash
+journalctl -u synchronizer-cli -f
+```
+```bash
+sudo systemctl status synchronizer-cli-web
+```
+```bash
+sudo systemctl status synchronizer-cli
+```
 
+---
 
 ## 📊 Monitor
 
