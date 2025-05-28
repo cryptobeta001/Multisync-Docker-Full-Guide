@@ -31,7 +31,7 @@ This will create a config file at ~/.synchronizer-cli/config.json.
 Follow the prompts to enter your Synq key, wallet address, and sync name.
 
 ---
-## 🐳 Docker Management
+## 💻 Docker Management
 
 Install Docker (Linux only):
 
@@ -60,7 +60,7 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl enable synchronizer-cli
     sudo systemctl start synchronizer-cli
 
-## Web Dashboard
+## 🌐 Web Dashboard
 
     synchronize service-web
     sudo cp ~/.synchronizer-cli/synchronizer-cli-web.service /etc/systemd/system/
@@ -68,7 +68,7 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl enable synchronizer-cli-web
     sudo systemctl start synchronizer-cli-web
 
-## To check logs
+## 📦 To check logs
 
     journalctl -u synchronizer-cli -f 
     
