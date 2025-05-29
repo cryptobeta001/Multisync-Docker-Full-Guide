@@ -87,6 +87,10 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl stop synchronizer-cli-web
     npm install -g synchronizer-cli
     npm list -g synchronizer-cli --depth=0
+    sudo systemctl enable synchronizer-cli
+    sudo systemctl start synchronizer-cli
+    sudo systemctl enable synchronizer-cli-web
+    sudo systemctl start synchronizer-cli-web
 
 ![image](https://github.com/user-attachments/assets/86d259a1-dfb2-4359-8960-b80183e4fcab)
 
