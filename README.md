@@ -81,6 +81,16 @@ Log out and back in afterward for changes to take effect.
 
 ---
 
+## 🤖 TO UPDATE THE SYSTEM 2.0.8 (ALL IN ONE COMMAND)
+
+    sudo systemctl stop synchronizer-cli
+    sudo systemctl stop synchronizer-cli-web
+    npm install -g synchronizer-cli
+    npm list -g synchronizer-cli --depth=0
+
+![image](https://github.com/user-attachments/assets/86d259a1-dfb2-4359-8960-b80183e4fcab)
+
+
 
 ## 📦 To check logs
 
@@ -98,9 +108,10 @@ sudo systemctl status synchronizer-cli
 
 ## 📊 Monitor
 
-    Synchronize web
+    Synchronize points
 
-![image](https://github.com/user-attachments/assets/565a3da0-65bb-4f9b-a21e-888d212f2eef)
+![image](https://github.com/user-attachments/assets/15153dd7-480a-4812-a58a-77ca13a18565)
+
 
     
 ---
