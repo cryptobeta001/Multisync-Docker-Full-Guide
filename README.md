@@ -81,7 +81,7 @@ Log out and back in afterward for changes to take effect.
 
 ---
 
-## 🤖 TO UPDATE THE SYSTEM 2.0.8 (ALL IN ONE COMMAND)
+## 🤖 TO UPDATE THE SYSTEM (ALL IN ONE COMMAND)
 
     sudo systemctl stop synchronizer-cli
     sudo systemctl stop synchronizer-cli-web
