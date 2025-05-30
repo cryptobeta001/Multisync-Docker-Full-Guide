@@ -83,6 +83,15 @@ Log out and back in afterward for changes to take effect.
 
 ## 🤖 TO UPDATE THE SYSTEM (ALL IN ONE COMMAND)
 
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    nvm install 18.20.0
+    nvm use 18.20.0
+    nvm alias default 18.20.0
+
+----
+
     sudo systemctl stop synchronizer-cli
     sudo systemctl stop synchronizer-cli-web
     npm install -g synchronizer-cli
@@ -91,6 +100,8 @@ Log out and back in afterward for changes to take effect.
     sudo systemctl start synchronizer-cli
     sudo systemctl enable synchronizer-cli-web
     sudo systemctl start synchronizer-cli-web
+
+----
 
 ![image](https://github.com/user-attachments/assets/86d259a1-dfb2-4359-8960-b80183e4fcab)
 
